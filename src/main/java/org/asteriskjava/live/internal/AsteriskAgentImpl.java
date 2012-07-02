@@ -34,7 +34,7 @@ public class AsteriskAgentImpl extends AbstractLiveObject implements AsteriskAge
     AsteriskAgentImpl(AsteriskServerImpl server, String name, String agentId, AgentState state)
     {
         super(server);
-        if (server == null || name == null || agentId == null)
+        if (server == null )
         {
             throw new IllegalArgumentException("Parameters passed to AsteriskAgentImpl() must not be null.");
         }
